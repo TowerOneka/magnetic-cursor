@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+
+import "@/styles/reset.scss";
+import "@/styles/globals.scss";
+import "@/styles/root.scss";
+import MagnetCursor from "@/components/common/MagnetCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MagnetCursor>{children}</MagnetCursor>
+      </body>
     </html>
   );
 }
