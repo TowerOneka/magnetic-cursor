@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <div className={s.root}>
       <div className={s.homeWrapper} data-cursor-magnet>
-        <p className={s.homeInner}>div</p>
+        <p className={s.homeInner}>Div</p>
         <div className={s.home} data-cursor-magnet>
-          innerDiv
+          Inner Div
         </div>
       </div>
       <button className={s.home} data-cursor-magnet>
-        HOME
+        Button
       </button>
       <a href="#" className={s.home} data-cursor-magnet>
-        anchor
+        Anchor
       </a>
       <Link href="/" data-cursor-magnet>
         Link
